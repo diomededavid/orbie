@@ -13,6 +13,12 @@
     --light-gray-color: #C6C8CA;
 }
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .uk-background-primary  {
     background-color: var( --primary-color);
 }
@@ -38,9 +44,34 @@
 }
 
 
+.uk-background-tertiary {
+    background-color: var( --tertiary-color);
+}
+
+.uk-section-tertiary {
+    background-color: var( --tertiary-color);
+}
+
+.uk-text-tertiary {
+    color: var( --tertiary-color);
+}
+
+.uk-background-quaternary {
+    background-color: var( --quaternary-color);
+}
+
+.uk-section-quaternary {
+    background-color: var( --quaternary-color);
+}
+
+.uk-text-quaternary {
+    color: var( --quaternary-color);
+}
+
+
 .uk-navbar-left h1 a {
     background-color: #0096ce;
-    background-image: url(https://cdn.orbie.org/assets/orbie.png);
+    background-image: url('https://cdn.orbie.org/assets/orbie.png');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 34px 34px;
@@ -50,10 +81,15 @@
     padding-top: 64px;
     transition: background-color .25s;
     width: 64px;
+    margin-right: 2rem;
 }
 
 .uk-navbar-left h1 a:hover {
     background-color: var( --secondary-color);
+}
+
+.uk-navbar-nav li a {
+    font-weight: 700;
 }
 
 .uk-button {
@@ -61,8 +97,57 @@
 }
 
 
-
 .uk-button-default {
     background-color: var( --primary-color);
     color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "raleway", sans-serif;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin: .5em 0 1.5em;
+    font-weight: 500;
+}
+
+
+.hero-container {
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(102,62,115,.8) 0%, rgba(0,78,119,.8) 35%, rgba(0,188,242,.4) 100%), url(/images/leadership.webp) no-repeat top center;
+    background-size: cover, cover;
+    height: 75svh;
+    width: 100%;
+    position: relative;
+    clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 100%,
+            0 calc(100% - 5vw)
+    );
+}
+h1.uk-heading-large {
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: clamp(3rem, 5vw, 6rem);
+    margin: 10% auto;
+    text-align: center;
+}
+
+.uk-heading-medium {
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+}
+
+.uk-heading-large {
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+}
+.uk-heading-large {
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+    color: var( --quaternary-color);
 }
