@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #004E77;
+    --secondary-color: #663E73;
+    --tertiary-color: #00A8A0;
+    --quaternary-color: #00BCF2;
+    --quinary-color: #F9A825;
+    --senary-color: #F9A825;
+    --septenary-color: #F9A825;
+    --octonary-color: #F9A825;
+    --nonary-color: #F9A825;
+    --denary-color: #F9A825;
+    --dark-gray-color: #727477;
+    --light-gray-color: #C6C8CA;
+}
+
+.uk-background-primary  {
+    background-color: var( --primary-color);
+}
+
+.uk-section-primary {
+    background: var( --primary-color);
+}
+
+.uk-text-primary {
+    color: var( --primary-color);
+}
+
+.uk-background-secondary {
+    background-color: var( --secondary-color);
+}
+
+.uk-section-secondary {
+    background-color: var( --secondary-color);
+}
+
+.uk-text-secondary {
+    color: var( --secondary-color);
+}
+
+
+.uk-navbar-left h1 a {
+    background-color: #0096ce;
+    background-image: url(https://cdn.orbie.org/assets/orbie.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 34px 34px;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 64px;
+    transition: background-color .25s;
+    width: 64px;
+}
+
+.uk-navbar-left h1 a:hover {
+    background-color: var( --secondary-color);
+}
+
+.uk-button {
+    border-radius: 1rem;
+}
+
+
+
+.uk-button-default {
+    background-color: var( --primary-color);
+    color: #fff;
+}
