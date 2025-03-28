@@ -5,12 +5,24 @@
     --quaternary-color: #00BCF2;
     --dark-gray-color: #727477;
     --light-gray-color: #C6C8CA;
+    --black-color: #001919;
 }
 
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "raleway", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .uk-background-primary  {
@@ -25,6 +37,7 @@
     color: var( --primary-color);
 }
 
+
 .uk-background-secondary {
     background-color: var( --secondary-color);
 }
@@ -35,6 +48,11 @@
 
 .uk-text-secondary {
     color: var( --secondary-color);
+}
+
+.uk-button-secondary {
+    background-color: var( --secondary-color);
+    color: #fff;
 }
 
 
@@ -48,6 +66,11 @@
 
 .uk-text-tertiary {
     color: var( --tertiary-color);
+}
+
+.uk-button-tertiary {
+    background-color: var( --tertiary-color);
+    color: #fff;
 }
 
 .uk-background-quaternary {
@@ -72,6 +95,10 @@
 
 .uk-text--light-gray{
     color: var( --light-gray-color);
+}
+
+.uk-text--black {
+    color: var( --black-color);
 }
 
 
@@ -99,9 +126,14 @@
 }
 
 .uk-button {
+    font-weight: 500;
     border-radius: 1rem;
 }
 
+.uk-button:hover {
+    border: 1px solid #ffffff;
+    box-shadow: 10px 10px var(--quaternary-color);
+}
 
 .uk-button-default {
     background-color: var( --primary-color);
@@ -180,6 +212,7 @@ a {
     color: hsl(0 0 100%);
     transition: all 0.2s ease-in-out;
 
+
     &:hover {
         background: hsl(0 0 100%);
         color: hsl(0 0 20%);
@@ -217,9 +250,6 @@ a {
     max-inline-size: 100%;
 }
 
-.footer__text {
-    font-size: 1.2rem;
-}
 
 .main {
     width: 100%;
@@ -350,3 +380,5 @@ margin: 0 auto;
     font-weight: 700;
     color: var();
 }
+
+
