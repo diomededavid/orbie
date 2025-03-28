@@ -1,415 +1,412 @@
 :root {
-    --orbie-brand-primary: #004E77;
-    --orbie-brand-secondary: #663E73;
-    --orbie-brand-tertiary: #00A8A0;
-    --orbie-brand-quaternary: #00BCF2;
-    --orbie-brand-blue: #0096ce;
-    --orbie-brand-dark-gray: #727477;
-    --orbie-brand-light-gray: #C6C8CA;
-    --orbie-brand-black: #001919;
+    --orbie-brand-primary:#004E77;
+    --orbie-brand-secondary:#663E73;
+    --orbie-brand-tertiary:#00A8A0;
+    --orbie-brand-quaternary:#00BCF2;
+    --orbie-brand-blue:#0096ce;
+    --orbie-brand-dark-gray:#727477;
+    --orbie-brand-light-gray:#C6C8CA;
+    --orbie-brand-black:#001919;
+  }
+  * {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+  body {
+    font-family:"Gotham",sans-serif;
+    font-style:normal;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family:"Gotham",sans-serif;
+    font-weight:700;
+  }
+  p {
+    font-size:1.25em;
+    line-height:1.5em;
+    margin:.5em 0 1.5em;
+    font-weight:500;
+  }
+  nav ol,nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  ol,ul {
+    list-style:none;
+  }
+  .uk-background-primary {
+    background-color:var(  --orbie-brand-primary);
+  }
+  .uk-section-primary {
+    background:var(  --orbie-brand-primary);
+  }
+  .uk-text-primary {
+    color:var(  --orbie-brand-primary);
+  }
+  .uk-background-secondary {
+    background-color:var(  --orbie-brand-secondary);
+  }
+  .uk-section-secondary {
+    background-color:var(  --orbie-brand-secondary);
+  }
+  .uk-text-secondary {
+    color:var(  --orbie-brand-secondary);
+  }
+  .uk-button-secondary {
+    background-color:var(  --orbie-brand-secondary);
+    color:#fff;
+  }
+  .uk-background-tertiary {
+    background-color:var( --orbie-brand-tertiary);
+  }
+  .uk-section-tertiary {
+    background-color:var( --orbie-brand-tertiary);
+  }
+  .uk-text-tertiary {
+    color:var( --orbie-brand-tertiary);
+  }
+  .uk-button-tertiary {
+    background-color:var( --orbie-brand-tertiary);
+    color:#fff;
+  }
+  .uk-background-quaternary {
+    background-color:var( --orbie-brand-quaternary);
+    
+  }
+  .uk-section-quaternary {
+    background-color:var( --orbie-brand-quaternary);
+    background:linear-gradient(90deg,rgba(102,62,115,.8) 0%,rgba(0,78,119,.8) 35%,rgba(0,188,242,.7) 100%),url(https://cdn.orbie.org/sites/background-poly.png
+    ) top center;
 }
-
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Gotham", sans-serif;
-    font-style: normal;
-}
-
-/* h1, h2, h3, h4, h5, h6 {
-    font-family: "raleway", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-} */
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Gotham", sans-serif;
-    font-weight: 700;}
-
-p {
-    font-size: 1.25em;
-    line-height: 1.5em;
-    margin: .5em 0 1.5em;
-    font-weight: 500;
-}
-
-.uk-background-primary  {
-    background-color: var(  --orbie-brand-primary);
-}
-
-.uk-section-primary {
-    background: var(  --orbie-brand-primary);
-}
-
-.uk-text-primary {
-    color: var(  --orbie-brand-primary);
-}
-
-
-.uk-background-secondary {
-    background-color: var(  --orbie-brand-secondary);
-}
-
-.uk-section-secondary {
-    background-color: var(  --orbie-brand-secondary);
-}
-
-.uk-text-secondary {
-    color: var(  --orbie-brand-secondary);
-}
-
-.uk-button-secondary {
-    background-color: var(  --orbie-brand-secondary);
-    color: #fff;
-}
-
-
-.uk-background-tertiary {
-    background-color: var( --orbie-brand-tertiary);
-}
-
-.uk-section-tertiary {
-    background-color: var( --orbie-brand-tertiary);
-}
-
-.uk-text-tertiary {
-    color: var( --orbie-brand-tertiary);
-}
-
-.uk-button-tertiary {
-    background-color: var( --orbie-brand-tertiary);
-    color: #fff;
-}
-
-.uk-background-quaternary {
-    background-color: var( --orbie-brand-quaternary);
-}
-
-.uk-section-quaternary {
-    background-color: var( --orbie-brand-quaternary);
-}
-
-.uk-text-quaternary {
-    color: var( --orbie-brand-quaternary) !important;
-}
-
-.uk-background-light-gray {
-    background-color:  var( --orbie-brand-light-gray);
-}
-
-.uk-section-light-gray {
-    background-color:  var( --orbie-brand-light-gray);
-}
-
-.uk-text--light-gray{
-    color: var( --orbie-brand-light-gray);
-}
-
-.uk-text--black {
-    color: var( --orbie-brand-black);
-}
-
-
-.uk-navbar {
-    height: 4rem;
-}
-
-.uk-navbar-left h1 a {
-    background-color: #0096ce;
-    background-image: url('https://cdn.orbie.org/assets/orbie.png');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 34px 34px;
-    display: block;
-    height: 0;
-    overflow: hidden;
-    padding-top: 64px;
-    transition: background-color .25s;
-    width: 64px;
-    margin-right: 2rem;
-}
-
-.uk-navbar-left h1 a:hover {
-    background-color: var(  --orbie-brand-secondary);
-}
-
-.uk-navbar-nav li a {
-    font-weight: 700;
-}
-
-.uk-button {
-    font-family: "Gotham", sans-serif;
-    border-radius: 50px;
-    text-transform: inherit;
-    border: 0 solid #fff;
-    border-radius: 50px;
-    box-shadow: 0 3px 15px rgba(0,0,0,.15);
-    color: #fff;
-    font-weight: 600;
-    line-height: 1em;
-    margin: 0 .5em 1em 0;
-    padding: 1.25em 2em 1.125em;
-    transition: background-color .25s,color .25s;
-}
-
-/*.uk-button:hover {*/
-/*    border: 1px solid #ffffff;*/
-/*    box-shadow: 10px 10px var(--orbie-brand-quaternary);*/
-/*}*/
-
-.uk-button-default {
-    background-color: var(  --orbie-brand-primary);
-    color: #fff;
-}
-
-.uk-button-primary {
-    background-color: rgba(0,150,206,.75);
-    border: 0 solid #fff;
-    border-radius: 50px;
-    box-shadow: 0 3px 15px rgba(0,0,0,.15);
-    color: #fff;
-    margin: .5em .25em;
-    padding: 1.25em 2.5em;
-    transition: background-color .25s,color .25s;
-}
-
-.uk-button-primary a:hover {
-    background-color: #fff !important;
-    color: #0096ce;
-}
-
-.uk-button-primary:hover {
-    background-color: #fff !important;
-    color: #0096ce;
-}
-
-.hero-container {
-    font-weight: 700;
-    background: linear-gradient(90deg, rgba(102,62,115,.8) 0%, rgba(0,78,119,.8) 35%, rgba(0,188,242,.4) 100%), url(/orbie/images/leadership.webp) no-repeat top center;
-    background-size: cover, cover;
-    animation: gradient 15s ease infinite;
-    height: 75svh;
-    width: 100%;
-    position: relative;
-    clip-path: polygon(
-            0 0,
-            100% 0,
-            100% 100%,
-            0 calc(100% - 5vw)
-    );
-}
-
-h1.uk-heading-large {
-    font-family: "Gotham Ultra", sans-serif;
-    color: white;
-    font-size: clamp(3rem, 5vw, 6rem);
-    margin: 10% auto;
-    text-align: center;
-}
-
-.uk-heading-medium {
-    font-family: "raleway", sans-serif;
-    font-weight: 700;
-}
-
-
-.uk-heading-large--bold {
-    font-family: "Gotham Ultra", sans-serif;
-    font-weight: 900;
-}
-
-.header,
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-inline: 3rem;
-    background: hsl(0 0 0% / 0.5);
-}
-
-.footer {
-    justify-content: center;
-}
-
-.header__title {
-    margin-block: 2rem;
-}
-
-.header__image {
-    display: block;
-    margin: auto;
-    max-inline-size: 100%;
-}
-
-
-.main {
-    width: 100%;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    flex-wrap: wrap;
-    row-gap: 3rem;
-}
-
-/* Demo Code */
-.card {
-    --margin: 2rem;
-    --padding: 2rem;
-    --slant: 20%;
-
-    margin-inline: 0;
-    padding-inline: var(--padding);
-    padding-inline: 0;
-
-    display: block;
-    inline-size: 100%;
-    max-inline-size: 400px;
-    min-inline-size: 340px;
-    position: relative;
-    inset-block-start: 0;
-    overflow: hidden;
-    background: linear-gradient(to right, #004E77, #1bb0e0);
-    transition: all 0.2s ease;
-    border-radius: 8px;
-
-    clip-path: polygon(
-            var(--slant) 0,
-            100% 0,
-            calc(100% - var(--slant)) 100%,
-            0 100%
-    );
-    clip-path: polygon(
-            calc(var(--slant) - var(--padding)) 0,
-            100% 0,
-            calc(100% - var(--slant) + var(--padding)) 100%,
-            0 100%
-    );
-}
-
-.card:hover {
-    inset-block-start: -0.7rem;
-    scale: 1.1;
-}
-
-.card__start,
-.card__end {
-    block-size: 100%;
-    inline-size: var(--slant);
-}
-
-.card__start {
-    float: inline-start;
-    shape-outside: polygon(0 0, 100% 0, 0 100%);
-    shape-margin: 2rem;
-}
-
-.card__end {
-    float: inline-end;
-    shape-outside: polygon(100% 100%, 100% 0, 0 100%);
-    shape-margin: 2rem;
-}
-
-.card__content {
-    margin: 0;
-    padding: 0;
-    padding-block-end: 2rem;
-    font-size: 1rem;
-}
-
-.card__title {
-    font-family: "Gotham", sans-serif;
-    font-weight: 700;
-    margin-block: 2rem 1rem;
-    color: hsl(0 0 100%);
-    line-height: 1.2;
-
+  .uk-text-quaternary {
+    color:var( --orbie-brand-quaternary) !important;
+  }
+  .uk-background-light-gray {
+    background-color:var( --orbie-brand-light-gray);
+  }
+  .uk-section-light-gray {
+    background-color:var( --orbie-brand-light-gray);
+  }
+  .uk-text--light-gray {
+    color:var( --orbie-brand-light-gray);
+  }
+  .uk-text--black {
+    color:var( --orbie-brand-black);
+  }
+  .uk-navbar-container:not(.uk-navbar-transparent) {
+    background-color:#fff;
+  }
+  .uk-navbar {
+    height:4rem;
+  }
+  .uk-navbar-left h1 a {
+    background-color:#0096ce;
+    background-image:url('https://cdn.orbie.org/assets/orbie.png');
+    background-position:50%;
+    background-repeat:no-repeat;
+    background-size:34px 34px;
+    display:block;
+    height:0;
+    overflow:hidden;
+    padding-top:64px;
+    transition:background-color .25s;
+    width:64px;
+    margin-right:2rem;
+  }
+  .uk-navbar-left h1 a:hover {
+    background-color:var(  --orbie-brand-secondary);
+  }
+  .uk-navbar-nav li a {
+    font-weight:700;
+  }
+  .uk-button {
+    font-family:"Gotham",sans-serif;
+    border-radius:50px;
+    text-transform:inherit;
+    border:0 solid #fff;
+    border-radius:50px;
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
+    color:#fff;
+    font-weight:600;
+    line-height:1em;
+    margin:0 .5em 1em 0;
+    padding:1.25em 2em 1.125em;
+    transition:background-color .25s,color .25s;
+  }
+  
+  .uk-button-default {
+    background-color:var(  --orbie-brand-primary);
+    color:#fff;
+  }
+  .uk-button-primary {
+    background-color:rgba(0,150,206,.75);
+    border:0 solid #fff;
+    border-radius:50px;
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
+    color:#fff;
+    margin:.5em .25em;
+    padding:1.25em 2.5em;
+    transition:background-color .25s,color .25s;
+  }
+  .uk-button-primary:hover {
+    background-color:#fff !important;
+    color:#0096ce;
+  }
+  .hero-container {
+    font-weight:700;
+    background:linear-gradient(90deg,rgba(102,62,115,.8) 0%,rgba(0,78,119,.8) 35%,rgba(0,188,242,.4) 100%),url(/orbie/images/leadership.webp) no-repeat top center;
+    background-size:cover,cover;
+    animation:gradient 15s ease infinite;
+    height:75svh;
+    width:100%;
+    position:relative;
+    clip-path:polygon(
+              0 0,100% 0,100% 100%,0 calc(100% - 5vw)
+      );
+  }
+  h1.uk-heading-large {
+    font-family:"Gotham Ultra",sans-serif;
+    color:white;
+    font-size:clamp(3rem,5vw,6rem);
+    margin:10% auto;
+    text-align:center;
+  }
+  h2.uk-heading-large {
+    font-family:"Gotham Ultra",sans-serif;
+    color:white;
+    font-size:3rem;
+    text-align:center;
+  }
+  .uk-heading-medium {
+    font-family:"raleway",sans-serif;
+    font-weight:700;
+  }
+  .uk-heading-large--bold {
+    font-family:"Gotham Ultra",sans-serif;
+    font-weight:900;
+  }
+  .header,.footer {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    padding-inline:3rem;
+    background:hsl(0 0 0% / 0.5);
+  }
+  .footer {
+    justify-content:center;
+  }
+  .header__title {
+    margin-block:2rem;
+  }
+  .header__image {
+    display:block;
+    margin:auto;
+    max-inline-size:100%;
+  }
+  .card__container {
+    width:100%;
+    padding:3rem;
+    display:flex;
+    justify-content:center;
+    align-self:center;
+    flex-wrap:wrap;
+    row-gap:3rem;
+  }
+  /* Demo Code */
+  .card {
+    --margin:2rem;
+    --padding:2rem;
+    --slant:20%;
+    margin-inline:0;
+    padding-inline:var(--padding);
+    padding-inline:0;
+    display:block;
+    inline-size:100%;
+    max-inline-size:400px;
+    min-inline-size:340px;
+    position:relative;
+    inset-block-start:0;
+    overflow:hidden;
+    background:linear-gradient(to right,#004E77,#1bb0e0);
+    transition:all 0.2s ease;
+    border-radius:8px;
+    clip-path:polygon(
+              var(--slant) 0,100% 0,calc(100% - var(--slant)) 100%,0 100%
+      );
+    clip-path:polygon(
+              calc(var(--slant) - var(--padding)) 0,100% 0,calc(100% - var(--slant) + var(--padding)) 100%,0 100%
+      );
+  }
+  .card:hover {
+    inset-block-start:-0.7rem;
+    scale:1.1;
+  }
+  .card__start,.card__end {
+    block-size:100%;
+    inline-size:var(--slant);
+  }
+  .card__start {
+    float:inline-start;
+    shape-outside:polygon(0 0,100% 0,0 100%);
+    shape-margin:2rem;
+  }
+  .card__end {
+    float:inline-end;
+    shape-outside:polygon(100% 100%,100% 0,0 100%);
+    shape-margin:2rem;
+  }
+  .card__content {
+    margin:0;
+    padding:0;
+    padding-block-end:2rem;
+    font-size:1rem;
+  }
+  .card__title {
+    font-family:"Gotham",sans-serif;
+    font-weight:700;
+    margin-block:2rem 1rem;
+    color:hsl(0 0 100%);
+    line-height:1.2;
     a {
-        color: inherit;
-        text-decoration: none;
-    }
-}
-
-.card__image {
-    margin-block: 0;
-    margin-inline: calc(var(--margin) * -1);
-    margin-inline: calc(var(--slant) * -1);
-    padding: 0;
-    display: inline;
-    inline-size: calc(100% + (var(--margin) * 2));
-    inline-size: 100%;
-    block-size: 17rem;
-    object-fit: cover;
-    object-position: center;
-}
-
-.card__text {
-    margin-block: 1rem 1.3rem;
-    padding: 0;
-}
-
-.grid__col--3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    max-width: 75%;
-    margin: 0 auto;
-}
-
-@media (max-width: 580px) {
+    color:inherit;
+    text-decoration:none;
+  }
+  }.card__image {
+    margin-block:0;
+    margin-inline:calc(var(--margin) * -1);
+    margin-inline:calc(var(--slant) * -1);
+    padding:0;
+    display:inline;
+    inline-size:calc(100% + (var(--margin) * 2));
+    inline-size:100%;
+    block-size:17rem;
+    object-fit:cover;
+    object-position:center;
+  }
+  .card__text {
+    margin-block:1rem 1.3rem;
+    padding:0;
+  }
+  .grid__col--3 {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:1rem;
+    max-width:75%;
+    margin:0 auto;
+  }
+  @media (max-width:580px) {
     .header {
-        flex-direction: column;
-    }
+    flex-direction:column;
+  }
+  .header__title {
+    margin-block-end:0;
+  }
+  .hero-container {
+    height:70svh;
+  }
+  h1.uk-heading-large {
+    font-size:clamp(2.25rem,5vw,6rem);
+  }
+  h2.uk-heading-large {
+    font-size:2rem;
+  }
 
-    .header__title {
-        margin-block-end: 0;
-    }
+  .uk-navbar-mobile--flex {
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+  }
+  *+.uk-grid-margin,.uk-grid+.uk-grid,.uk-grid>.uk-grid-margin {
+    margin-top:0.5rem;
+  }
+  .uk-icon>* {
+    color:var( --orbie-brand-blue);
+  }
+  .uk-offcanvas-bar {
+    background-color:var( --orbie-brand-blue);
+  }
+  .uk-grid--flex {
+    display:flex;
+    flex-direction:column;
+  }
+  }.uk-navbar-nav li a,.uk-navbar-nav>li.uk-active>a {
+    font-family:"Gotham",sans-serif;
+    font-weight:700;
+    color:var( --orbie-brand-blue);
+    min-height:4rem;
+    text-transform:inherit;
+  }
+  .uk-navbar-nav li a:hover {
+    color:var( --orbie-brand-quaternary);
+  }
 
-    .hero-container {
-        height: 70svh;
-    }
-
-    h1.uk-heading-large {
-        font-size: clamp(2.25rem, 5vw, 6rem);
-    }
-
-    .uk-navbar-mobile--flex {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    *+.uk-grid-margin, .uk-grid+.uk-grid, .uk-grid>.uk-grid-margin {
-        margin-top: 0.5rem;
-    }
-
-    .uk-icon>* {
-        color: var( --orbie-brand-blue);
-    }
-
-    .uk-offcanvas-bar {
-        background-color: var( --orbie-brand-blue);
-    }
-
-    .uk-grid--flex {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.uk-navbar-nav li a, .uk-navbar-nav>li.uk-active>a {
-    font-family: "Gotham", sans-serif;
-    font-weight: 700;
-    color: var( --orbie-brand-blue);
-    min-height: 4rem;
-    text-transform: inherit;
-}
-
-.uk-navbar-nav li a:hover {
-    color: var( --orbie-brand-quaternary);
-}
+  footer.main {
+    background-color:#fcfcfc;
+    padding:4em 0 0
+  }
+  @media only screen and (max-width:1000px) {
+    footer.main {
+    padding:2em 0 0
+  }
+  }footer.main a {
+    color:#6b7f93
+  }
+  footer.main a:hover {
+    color:#566675
+  }
+  footer.main .container {
+    margin:0 auto;
+    max-width:1500px;
+    padding:0 30px
+  }
+  footer.main nav {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr
+  }
+  @media only screen and (max-width:1000px) {
+    footer.main nav {
+    display:block;
+    padding:0 5%;
+    text-align:center
+  }
+  footer.main nav ul {
+    margin:2em 0
+  }
+  }footer.main nav .logo {
+    font-size:.875em;
+    line-height:1.5em;
+    padding:2em 0
+  }
+  footer.main nav .logo img {
+    width:60%
+  }
+  footer.main nav ul li a {
+    color:#6b7f93;
+    display:block;
+    margin:1em 0
+  }
+  footer.main nav ul li a:hover {
+    color:#566675
+  }
+  footer.main nav ul li:first-of-type {
+    font-weight:800
+  }
+  footer.main .copyright {
+    font-size:.875em;
+    margin:2em 0 0;
+    padding:2em 0 1.5em;
+    position:relative
+  }
+  @media only screen and (max-width:1000px) {
+    footer.main .copyright {
+    font-size:1em;
+    line-height:1.5em;
+    padding:1.5em 5%;
+    text-align:center
+  }
+  footer.main .copyright a {
+    white-space:nowrap
+  }
+  }
