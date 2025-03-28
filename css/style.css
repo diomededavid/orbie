@@ -3,12 +3,6 @@
     --secondary-color: #663E73;
     --tertiary-color: #00A8A0;
     --quaternary-color: #00BCF2;
-    --quinary-color: #F9A825;
-    --senary-color: #F9A825;
-    --septenary-color: #F9A825;
-    --octonary-color: #F9A825;
-    --nonary-color: #F9A825;
-    --denary-color: #F9A825;
     --dark-gray-color: #727477;
     --light-gray-color: #C6C8CA;
 }
@@ -66,6 +60,18 @@
 
 .uk-text-quaternary {
     color: var( --quaternary-color) !important;
+}
+
+.uk-background-light-gray {
+    background-color:  var( --light-gray-color);
+}
+
+.uk-section-light-gray {
+    background-color:  var( --light-gray-color);
+}
+
+.uk-text--light-gray{
+    color: var( --light-gray-color);
 }
 
 
@@ -267,30 +273,20 @@ a {
 
 .card__start,
 .card__end {
-// background: grey;
     block-size: 100%;
     inline-size: var(--slant);
 }
 
 .card__start {
     float: inline-start;
-// clip-path: polygon(0 0, 100% 0, 0 100%);
     shape-outside: polygon(0 0, 100% 0, 0 100%);
-// shape-outside: polygon(0 0, 100% 0, var(--padding) 100%, 0 100%);
     shape-margin: 2rem;
 }
 
 .card__end {
     float: inline-end;
-// clip-path: polygon(100% 100%, 100% 0, 0 100%);
     shape-outside: polygon(100% 100%, 100% 0, 0 100%);
     shape-margin: 2rem;
-// shape-outside: polygon(
-// 	100% 100%,
-// 	100% 0,
-// 	calc(100% - var(--padding)) 0,
-// 	0 100%
-// );
 }
 
 .card__content {
@@ -298,7 +294,6 @@ a {
     padding: 0;
     padding-block-end: 2rem;
     font-size: 1rem;
-// text-align: justify;
 }
 
 .card__title {
@@ -351,3 +346,7 @@ margin: 0 auto;
 
 
 
+.uk-navbar-nav li a {
+    font-weight: 700;
+    color: var();
+}
