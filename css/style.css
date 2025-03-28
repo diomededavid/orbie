@@ -216,18 +216,11 @@ h1.uk-heading-large {
     font-weight: 700;
 }
 
-.uk-heading-large {
+
+.uk-heading-large--bold {
     font-family: "Gotham Ultra", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
 }
-
-.uk-heading-large {
-    font-family: "Gotham", sans-serif;
-    font-weight: 700;
-    color: var( --orbie-brand-quaternary);
-}
-
-
 
 .header,
 .footer {
@@ -360,17 +353,6 @@ h1.uk-heading-large {
     padding: 0;
 }
 
-@media (max-width: 580px) {
-    .header {
-        flex-direction: column;
-    }
-
-    .header__title {
-        margin-block-end: 0;
-    }
-}
-
-
 .grid__col--3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -379,7 +361,46 @@ h1.uk-heading-large {
     margin: 0 auto;
 }
 
+@media (max-width: 580px) {
+    .header {
+        flex-direction: column;
+    }
 
+    .header__title {
+        margin-block-end: 0;
+    }
+
+    .hero-container {
+        height: 70svh;
+    }
+
+    h1.uk-heading-large {
+        font-size: clamp(2.25rem, 5vw, 6rem);
+    }
+
+    .uk-navbar-mobile--flex {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    *+.uk-grid-margin, .uk-grid+.uk-grid, .uk-grid>.uk-grid-margin {
+        margin-top: 0.5rem;
+    }
+
+    .uk-icon>* {
+        color: var( --orbie-brand-blue);
+    }
+
+    .uk-offcanvas-bar {
+        background-color: var( --orbie-brand-blue);
+    }
+
+    .uk-grid--flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .uk-navbar-nav li a, .uk-navbar-nav>li.uk-active>a {
     font-family: "Gotham", sans-serif;

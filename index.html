@@ -11,18 +11,30 @@
 </head>
 <body>
 <header>
-    <nav class="uk-navbar-container uk-navbar">
-        <div class="uk-flex uk-margin-right">
+    <nav class="uk-navbar-container uk-navbar" uk-sticky>
+        <div class="uk-flex uk-margin-right uk-navbar-mobile--flex">
             <div class="uk-navbar-left">
                 <h1><a href="/">ORBIE Awards</a>
                 </h1></div>
-                <div class="uk-navbar-left">
+                <div class="uk-navbar-left uk-visible@s">
                     <ul class="uk-navbar-nav">
                         <li class="uk-active"><a href="#">Chapters</a></li>
                         <li><a href="#">Converge</a></li>
                         <li><a href="#">Leadership Academy</a></li>
                     </ul>
                 </div>
+                <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon></a>
+
+        </div>
+    
+        <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav">
+                        <li><a class="uk-text-medium" href="#">Chapter</a></li>
+                        <li><a class="uk-text-medium" href="#">Converge</a></li>
+                        <li><a class="uk-text-medium" href="#">Leadership Academy</a></li>
+                    </ul>
+            </div>
         </div>
     </nav>
 </header>
@@ -30,7 +42,7 @@
 <section class="hero-container uk-flex uk-flex-center">
     <div class="uk-container uk-flex-center">
         <h1 class="uk-heading-large">Giving great executives the recognition they deserve.</h1>
-        <div class="grid__col--3" uk-grid>
+        <div class="grid__col--3 uk-grid--flex" uk-grid>
             <a class="uk-button uk-button-primary">FOR CIOs</a>
             <a class="uk-button uk-button-primary">FOR CISOs</a>
             <a class="uk-button uk-button-primary">FOR CMOs</a>
@@ -121,12 +133,12 @@
             </div>
         </div>
         <div class="uk-width-2-3@m uk-margin-top uk-text">
-            <h2 class="uk-text--black ">Nominate an outstanding executive who’s driving transformation.</h2>
-            <p class="uk-text--black ">
+            <h2 class="uk-text--black uk-heading-large--bold">Nominate an outstanding executive who’s driving transformation.</h2>
+            <p class="uk-text--black">
                 For over 25 years, the ORBIE Awards have recognized C-suite executives for leadership, innovation, and excellence.
                 Anyone may nominate, but the best nominations are from trusted business partners and colleagues of the nominee.
             </p>
-            <p class="uk-text--black ">
+            <p class="uk-text--black">
                 Nominating someone for an ORBIE Award is a great way to honor your C-suite executive colleagues or show appreciation
                 to your top clients, ensuring they receive the recognition they deserve.
             </p>
@@ -140,7 +152,7 @@
     <div class="uk-container">
     <div class="uk-flex uk-flex-wrap uk-flex-wrap-around  uk-height-medium uk-align-center uk-al">
         <div class="uk-width-1-2">
-            <h2>Give a great C-suite leader the recognition they deserve.</h2>
+            <h2 class="uk-heading-large--bold">Give a great C-suite leader the recognition they deserve.</h2>
         </div>
         <div class="uk-width-1-4 uk-margin-top">
             <a href="#" class="uk-button uk-button-primary uk-button-large">NOMINATE TODAY!</a>
